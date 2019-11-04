@@ -13,6 +13,43 @@
 
 
     <style>
+        .btn-a {
+            background-color: #323438;
+        }
+
+        .btn-a:hover {
+            background-color: #727882;
+        }
+
+        body {
+            font-size: 1.2rem;
+            background-color: #323438;
+        }
+
+        .card {
+            background-color: #494c52;
+        }
+
+        .txt {
+            background-color: #5f636b;
+            color: #fff;
+        }
+
+        .img-card {
+
+            border-color: #999;
+            border: 3px solid;
+            border-radius: 21px 21px 0 0;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        ul {
+            text-align: left;
+        }
+
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -58,15 +95,47 @@
 
         .product-device {
             position: absolute;
-            right: 10%;
+            right: 0;
             bottom: -30%;
-            width: 300px;
+            width: 200px;
             height: 540px;
             background-color: red;
             border-radius: 21px;
-            -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
-            z-index: -1;
+        }
+
+        .picon{
+            background-color: #5f636b;
+            color: #fff;
+        }
+
+        #benz {
+            position: absolute;
+            right: 0;
+            bottom: -30%;
+            width: 300px;
+            height: 440px;
+            border-radius: 21px;
+        }
+
+        #work {
+            position: absolute;
+            right: 0;
+            bottom: -30%;
+            width: 300px;
+            height: 840px;
+            border-radius: 21px;
+        }
+
+
+        #sim{
+            position: absolute;
+            width: 200px;
+            height: 340px;
+            border-radius: 21px;   
+            top: 0;
+            right: auto;
+            bottom: 0;
+            left: 0;
         }
 
         .product-device::before {
@@ -76,7 +145,7 @@
             bottom: 10%;
             left: 10px;
             content: "";
-            background-color: rgba(0, 255, 255, .1);
+            background-color: rgba(74, 74, 74, .1);
             border-radius: 5px;
         }
 
@@ -117,148 +186,204 @@
                     <title>Product</title>
                     <circle cx="12" cy="12" r="10" />
                 </svg>
-            </a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+            </a> |
+            <a class="py-2 d-none d-md-inline-block" href="#tp1">Arbeit</a> |
+            <a class="py-2 d-none d-md-inline-block" href="#tp2">Versailler Friedensvertrag</a> |
+            <a class="py-2 d-none d-md-inline-block" href="#tp3">Außenpolitik</a> |
+            <a class="py-2 d-none d-md-inline-block" href="#tp4">Wirtschaftslage</a> |
+            <a class="py-2 d-none d-md-inline-block" href="#tp5">Erfindungen & Unternehmen</a> |
+            <a class="py-2 d-none d-md-inline-block" href="#tp6">Finanzen</a>
         </div>
     </nav>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center card">
+            <div class="col-md-10 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 font-weight-normal">Wirtschaftserfolge der Weimarer Republik</h1><br>
+                <img class="img-fluid" src="pic/41KJmtBvJRL._SX355_.jpg">
+            </div>
+        </div>
+
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center card">
+                <div class="col-md-10 p-lg-5 mx-auto my-5">
+                       <a href="https://www.youtube.com/watch?v=1JTgkM1a898" id="vid1" target="_blank"><img src="pic/ia3Jrgc.png" class="img-fluid"></a>
+                       <br><label style="color: #fff;" for="vid1">Aufbruch aus dem Chaos</label>
+                </div>
+            </div>
+
     <a name="tp1"></a>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center card">
         <div class="col-md-10 p-lg-5 mx-auto my-5">
             <h1 class="display-4 font-weight-normal">Arbeit</h1>
             <ul class="list-group">
-                <li class="list-group-item">Landwirtschaft als einer der wichtigsten Bereiche des Deutschen Reiches
-                    erste Nachkriegsjahre durch Friedensproduktion gekennzeichnet</li>
-                <li class="list-group-item">Wiedereingliederung der demobilisierten Soldaten in den Wirtschaftprozess
+                <li class="list-group-item txt">Landwirtschaft, einer der wichtigsten Bereiche des Deutschen Reiches,
+                    der ersten Nachkriegsjahre wurde durch Friedensproduktion gekennzeichnet</li>
+                <li class="list-group-item txt">Wiedereingliederung der demobilisierten Soldaten in den
+                    Wirtschaftprozess
                 </li>
-                <li class="list-group-item">Aufschwung bei beinahe Vollbeschäftigung</li>
-                <li class="list-group-item">1921 erreichte die Industrieproduktion 66% des Vorkriegsniveaus</li>
-                <li class="list-group-item">1922 Arbeitslosigkeit unter 2%, im Ausland permanent im zweistelligen
+                <li class="list-group-item txt">Aufschwung bei beinahe Vollbeschäftigung</li>
+                <li class="list-group-item txt">1921 erreichte die Industrieproduktion 66% des Vorkriegsniveaus</li>
+                <li class="list-group-item txt">1922 Arbeitslosigkeit unter 2%, im Ausland permanent im zweistelligen
                     Bereich </li>
-                <li class="list-group-item">Arbeitslosigkeit: 1921: unter 3% und 1922: unter 2%</li>
+                <li class="list-group-item txt">Arbeitslosigkeit: 1921: unter 3% und 1922: unter 2%</li>
             </ul>
-
-
-
-            <a class="btn btn-outline-secondary" href="#">C s</a>
+            <br>
+            <a class="btn btn-outline-secondary" href="https://www.kripahle-online.de/unterricht/wp-content/uploads/2011/01/arbeitslosenunterst%C3%BCzung-1930-1.pdf" target="_blank">Gesetztliche Grundlage - Arbeitslosigkeit 1930</a>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-    </div>
+        
+        
+        
 
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="row">
+                <div class="col-4 picon"><img src="pic/ba105592.jpg" class="img-fluid"></div>
+            <div class="col-4 picon"><img src="pic/xp997308.jpg" class="img-fluid"></div>                  
+
+        </div>
+    </div>
+    <a name="tp2"></a>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center card">
         <div class="col-md-10 p-lg-5 mx-auto my-5">
             <h1 class="display-4 font-weight-normal">Versailler Friedensvertrag</h1>
             <ul class="list-group">
-                <li class="list-group-item">Gebietsverluste (alle Kolonien, 13% des Territoriums -
+                <li class="list-group-item txt">Gebietsverluste (alle Kolonien, 13% des Territoriums - beinhaltet -
                     10% der Bevölkerung,
                     50% Eisenerzversorgung,
                     25% Steinkohleförderung,
                     17% der Kartoffelernte,
                     13% Weizenernte)</li>
-                <li class="list-group-item">Souveränitätsbeschränkungen</li>
-                <li class="list-group-item">Reparationen</li>
-                <li class="list-group-item">Zuweisung der Alleinschuld am Krieg</li>
-                <li class="list-group-item">Abrüstung</li>
-                <li class="list-group-item">Trat am 10.01.1920 in Kraft</li>
-                <li class="list-group-item">USA verweigerte Ratifikation - Sonderfrieden (1921)</li>
+                <li class="list-group-item txt">Souveränitätsbeschränkungen</li>
+                <li class="list-group-item txt">Reparationen<ul>
+                    <li>erstmals im Mai 1921 auf internationaler Konferenz ausgehandelt, dass das Deutsche Reich insgesamt Reparationszahlungen von 132 Milliarden Mark bezahlen muss</li>
+                    <li>wenn der Vorschlag nicht angenommen wurde, drohte eine sofortige besetzung des Rheinlands</li>
+                    <li>Reichskanzler Joseph Wirth hatte keine Alternative als anzunehmen</li>
+                    <li>in Folgezeit bemühte sich das Kabinett, die Reparationszahlungen zu erfüllen</li>                    
+                </ul></li>
+                <li class="list-group-item txt">Zuweisung der Alleinschuld am Krieg</li>
+                <li class="list-group-item txt">Abrüstung</li>
+                <li class="list-group-item txt">Trat am 10.01.1920 in Kraft</li>
+                <li class="list-group-item txt">USA verweigerte Ratifikation - Sonderfrieden (1921)</li>
             </ul>
             <br>
-            <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+            <a class="btn btn-outline-secondary btn-a" href="#">Coming soon</a>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        
     </div>
+    <a name="tp3"></a>
 
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center card">
+        <div class="col-md-10 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 font-weight-normal">Außenpolitik</h1>
+            <ul class="list-group">
+                <li class="list-group-item txt">1918: Matthias Erzberger unterzeichnet Waffenstillstand</li>
+                <li class="list-group-item txt">1919: Außenhandelswiederbelebung nach Auflösung einer Seeblockade</li>
+                <li class="list-group-item txt">10. bis 19. April 1922: Weltwirtschaftskonferenz,
+                    <ul>
+                        <li>Deutschland und Russland am 16. April einen Vertrag über die Aufnahme diplomatischer
+                            Beziehungen, gegenseitigen Verzicht auf Erstattung von Kriegsschäden und Handelsbeziehungen
+                        </li>
+                        <li>Deutschland und Sowjetunion erweiterten wirtschaftliche Beziehungen, auch in militärischen
+                            Aspekten</li>
+                        <li>Reichsregierung versprach sich eine Stärkung ihrer Position gegenüber den Westmächten </li>
+                    </ul>
+                </li>
 
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 font-weight-normal">Kampf um die Republik</h1>
-            <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts
-                with this example based on Apple’s marketing pages.</p>
-            <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+                <li class="list-group-item txt">1923: Höhepunkte der krisenhaften Entwicklung sind die Ruhrbesetzung und
+                    Währungs Zerrüttung
+                    <ul>
+                        <li>Ruhrbesetzung: passiver Widerstand vom Volk </li>
+                    </ul>
+                </li>
+                <li class="list-group-item txt">Ruhrgebiet aufgrund seiner wirtschaftlicher Lage von Frankreich und
+                    Großbritannien beliebt; Plan von Frankreich 1922 - 1924 das Ruhrgebiet vom Deutschen Reich
+                    abzulösen, welcher letztendlich wieder verworfen wurde</li>
+                <li class="list-group-item txt">1924: durch Inflation und niedrige Löhne könnte kostengünstig produziert
+                    werden → Wettbewerbsvorteil auf dem Markt</li>
+                <li class="list-group-item txt">ca. 1925 überstieg der Außenhandel die Ein-/ Ausfuhr des Kaiserreichs
+                    <ul>
+                        <li>Rohstoffe und Nahrungsmittel als häufigste Importgüter</li>
+                        <li>Fertigwaren und Maschinen als Export</li>
+                    </ul>
+                </li>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </div>
-
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 font-weight-normal">Hochkonjunktur Weltwirtschaftkonferenz</h1>
-            <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts
-                with this example based on Apple’s marketing pages.</p>
-            <a class="btn btn-outline-secondary" href="#">Coming soon</a>
-        </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-    </div>
-
-
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <a name="tp4"></a>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center card">
         <div class="col-md-10 p-lg-5 mx-auto my-5">
             <h1 class="display-4 font-weight-normal">Wirtschaftslage</h1>
 
             <ul class="list-group">
-                <li class="list-group-item">1919: Flüchtlinge aus Ostgebieten, Wiedereingliederung noch nicht
+                <li class="list-group-item txt">1919: Flüchtlinge aus Ostgebieten, Wiedereingliederung noch nicht
                     abgeschlossen, Umstellung Kriegs- auf Friedenswirtschaft</li>
-                <li class="list-group-item">1919:Industrieproduktion stieg um 20% an</li>
-                <li class="list-group-item">1920: harte Bedingungen des Friedensvertrags von Versailles: Aufstände
+                <li class="list-group-item txt">1919: Industrieproduktion stieg um 20% an</li>
+                <li class="list-group-item txt">1920: harte Bedingungen des Friedensvertrags von Versailles: Aufstände
                     linker und rechter Kräfte</li>
-                <li class="list-group-item">1920-1922 im Deutschen Reich Hochkonjunktur → nahezu Vollbeschäftigung</li>
-                <li class="list-group-item">Konjunktur war nur Schein (Folge: wirtschaftliche Krise 1923)</li>
-                <li class="list-group-item">1924: Aufschwung </li>
-                <li class="list-group-item">Ankurbelung der Wirtschaft durch die Eisenbahn Ausbauung</li>
-                <li class="list-group-item">Wirtschaftsaufschwung: Inflation nicht außer Kontrolle geraten +
+                <li class="list-group-item txt">1920 - 1922 im Deutschen Reich Hochkonjunktur → nahezu Vollbeschäftigung
+                </li>
+                <li class="list-group-item txt">Konjunktur war nur Schein (Folge: wirtschaftliche Krise 1923)</li>
+                <li class="list-group-item txt">1924: Aufschwung </li>
+                <li class="list-group-item txt">Ankurbelung der Wirtschaft durch die Eisenbahn Ausbauung</li>
+                <li class="list-group-item txt">Wirtschaftsaufschwung: Inflation nicht außer Kontrolle geraten +
                     Reparationen müssen bezahlbar bleiben</li>
-                <li class="list-group-item">1927 erreichte industrielle Produktion wieder einen hohen Stand (den von
+                <li class="list-group-item txt">1927 erreichte industrielle Produktion wieder einen hohen Stand (den von
                     1913)</li>
-                <li class="list-group-item">Produktionszahlen Von Landwirtschaft und Industrie stiegen weiter</li>
+                <li class="list-group-item txt">Produktionszahlen von Landwirtschaft und Industrie stiegen weiter</li>
             </ul>
 
             <a class="btn btn-outline-secondary" href="#">Coming soon</a>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </div>
 
+    <a name="tp5"></a>
 
-
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center card">
         <div class="col-md-10 p-lg-5 mx-auto my-5">
             <h1 class="display-4 font-weight-normal">Erfindungen & Unternehmen</h1>
 
             <ul class="list-group">
-                <li class="list-group-item">1924 neue Technologien <br>→ internationale Wettbewerbsfähigkeit durch
-                    technischen Fortschritt und Rationalisierung des </li>
-                <li class="list-group-item">Arbeitsprozesses</li>
-                <li class="list-group-item">Entwicklung der Elektrifizierung und Massenproduktion</li>
-                <li class="list-group-item">Siemens und die AEG (Berlin) wieder auf dem Weltmarkt vertreten</li>
-                <li class="list-group-item">1926: Daimler Benz AG entstand<br> → Zunahme der Motorisierung <br> →
-                    Kraftfahrzeugindustrie gewann an Bedeutung</li>
+                <li class="list-group-item txt">1924 neue Technologien <ul>
+                        <li>internationale Wettbewerbsfähigkeit durch
+                            technischen Fortschritt und Rationalisierung des Arbeitsprozesses</li>
+                    </ul>
+                </li>
+                <li class="list-group-item txt">Entwicklung der Elektrifizierung und Massenproduktion</li>
+                <li class="list-group-item txt">Siemens und die AEG (Berlin) wieder auf dem Weltmarkt vertreten</li>
+                <li class="list-group-item txt">1926: Daimler Benz AG entstand<ul>
+                        <li>Zunahme der Motorisierung</li>
+                        <li>Kraftfahrzeugindustrie gewann an Bedeutung</li>
+                    </ul>
+                </li>
 
-                <li class="list-group-item">Streben nach Marktbeherrschung führte zu Kartellbildung <br> → 1925: Fusion
-                    der Firmen BASF, Bayer, Hoechst und AGFA zur IG-Farbenindustrie als umsatzstärksten Konzern</li>
-                <li class="list-group-item">1926: Gründung der Vereinigten Stahlwerke AG <br> → viele Angestellte, viel
-                    Eisen- und Stahlproduktion <br> → gut für Wirtschaft, war das 2. größte Montanunternehmen der Welt
-                    (= Industriezweige, die sich mit Bodenschätzen befassen)</li>
+                <li class="list-group-item txt">Streben nach Marktbeherrschung führte zu Kartellbildung <br>
+                    <ul>
+                        <li>1925: Fusion
+                            der Firmen BASF, Bayer, Hoechst und AGFA zur IG-Farbenindustrie als umsatzstärksten Konzern
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-group-item txt">1926: Gründung der Vereinigten Stahlwerke AG <ul>
+                        <li>viele Angestellte,
+                            viel Eisen- und Stahlproduktion</li>
+                        <li>gut für Wirtschaft, war das 2. größte Montanunternehmen der Welt
+                            (= Industriezweige, die sich mit Bodenschätzen befassen)</li>
+                    </ul>
+                </li>
 
             </ul>
 
             <a class="btn btn-outline-secondary" href="#">Coming soon</a>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-    </div>
+        <div class="row">
+                <div class="col-2 picon"><img class="img-fluid" src="pic/xx.simplicissimus.jpg"></div>
+            <div class="col-4 picon"><img  class="img-fluid" src="pic/49218.jpg"></div>
+                   
 
+        </div>
+
+    </div>
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
         <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
             <div class="my-3 py-3">
-                <h2 class="display-5">Neurotransmitter (Botenstoffe des Nervensystems)</h2>
+                <h2 class="display-5">Neurotransmitter</h2>
+                <small>(Botenstoffe des Nervensystems)</small>
                 <p class="lead">Otto Loewi - 1921</p>
             </div>
             <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
@@ -267,28 +392,32 @@
         <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 p-3">
                 <h2 class="display-5">Autobahn</h2>
+                <small>-</small>
                 <p class="lead">Avus - 1921</p>
             </div>
-            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
+            <img class="img-card" src="pic/motorway.png">
         </div>
     </div>
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-        <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden;">
             <div class="my-3 py-3">
                 <h2 class="display-5">Flüssigkeitsrakete</h2>
+                <small>-</small>
                 <p class="lead">Wernher von Braun - 1926</p>
             </div>
-            <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
+
+            <img class="img-card" style=" border-radius: 21px 21px 0 0;" src="pic/rocket.png">
+
         </div>
-        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
             <div class="my-3 p-3">
-                <h2 class="display-5">Elektroenzephalografie (EEG - Messung der Gehirnströme)</h2>
+                <h2 class="display-5">Elektroenzephalografie</h2>
+                <small>(EEG - Messung der Gehirnströme)</small>
                 <p class="lead">Hans Berger - 1929</p>
             </div>
-            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
+
+            <img style=" border-radius: 21px 21px 0 0;" class="img-card" src="pic/eeg.png">
+
         </div>
     </div>
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
@@ -297,37 +426,27 @@
                 <h2 class="display-5">Elektronenmikroskop</h2>
                 <p class="lead">Ernst Ruska - 1931</p>
             </div>
-            <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
+
+            <img class="img-card" src="pic/mikro1.png">
+
         </div>
         <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 p-3">
                 <h2 class="display-5">Neutronen</h2>
                 <p class="lead">Werner Heisenberg - 1932</p>
             </div>
-            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
+
+            <img class="img-card mx-auto" style="border:0;" height="300px"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Quark_structure_neutron.svg/800px-Quark_structure_neutron.svg.png">
         </div>
     </div>
-
-
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 font-weight-normal">Industrie & Wirtschaft</h1>
-            <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts
-                with this example based on Apple’s marketing pages.</p>
-            <a class="btn btn-outline-secondary" href="#">Coming soon</a>
-        </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-    </div>
-
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <a name="tp6"></a>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center card">
         <div class="col-md-10 p-lg-5 mx-auto my-5">
             <h1 class="display-4 font-weight-normal">Finanzen</h1>
 
             <div class="list-group">
-                <div class="list-group-item list-group-item-action">
+                <div class="list-group-item txt">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">1913</h5>
                     </div>
@@ -338,13 +457,13 @@
                     </ul>
                 </div>
 
-                <div class="list-group-item list-group-item-action">
+                <div class="list-group-item txt">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">1914</h5>
                     </div>
                     <ul class="mb-1" style="text-align: left">
                         <li>Inflation auch stimuliert: staatliches Ausgabenniveau hoher Stand, Unternehmen hohe Steuern
-                            auf Verbraucher schieben, chlechter gestellte durch Reform auf Anleihen angewiesen</li>
+                            auf Verbraucher schieben, schlechter Gestellte durch Reform auf Anleihen angewiesen</li>
                         <li>Gewinner der Inflation: Leute mit Schulden, welche ihnen erlassen wurden und
                             Exportunternehmer</li>
                         <li>Verlierer der Inflation: Gläubiger erhielten für verliehenes Geld Wertloses und
@@ -353,7 +472,7 @@
                     </ul>
                 </div>
 
-                <div class="list-group-item list-group-item-action">
+                <div class="list-group-item txt">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">1918</h5>
                     </div>
@@ -361,16 +480,16 @@
                         <li>Erzbergersche Reichfinanzform: stärkte Zentralregierung, grundlegende Umstrukturierung der
                             Finanzordnung im Kaiserreich</li>
                         <li>Schulden: 153 Milliarden Mark</li>
-                        <li>Waffenstillstandsabkommen: verschärfung der finanziellen langfristige
+                        <li>Waffenstillstandsabkommen: Verschärfung der finanziellen Lage
                             <ul>
-                                <li> verlust von wichtigen Zolleinnahmen</li>
+                                <li> Verlust von wichtigen Zolleinnahmen</li>
                             </ul>
                         </li>
                     </ul>
                 </div>
 
 
-                <div class="list-group-item list-group-item-action">
+                <div class="list-group-item txt">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">1919</h5>
                     </div>
@@ -382,84 +501,100 @@
                 </div>
 
 
-                <div class="list-group-item list-group-item-action">
+                <div class="list-group-item txt">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">1920</h5>
                     </div>
                     <ul class="mb-1" style="text-align: left">
                         <li>Wert der Mark: 55% des Vorkriegsniveaus</li>
-                        <li>Reparaturen von 20 Milliarden Mark aufwand = hohe Belastung</li>
+                        <li>Reparaturen von 20 Milliarden Mark Aufwand = hohe Belastung</li>
                         <li>Nachkriegsinflation: Vervierfachung der Bargeldmenge im Umlauf</li>
                         <li>Einkünfte aus 1919 durch Gesetz zur Reichseinkommenssteuer ergänzt</li>
                         <li>Matthias Erzberger als Urheber der Finanzreform</li>
                     </ul>
                 </div>
 
-                <div class="list-group-item list-group-item-action">
+                <div class="list-group-item txt">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">1921</h5>
                     </div>
                     <ul class="mb-1" style="text-align: left">
                         <li>Rückkehr Deutschlands in die internationale Staatengemeinschaft</li>
-                        <li>Kredite aus den USA brachten deutsche Wirtschaft in Schwung: 
+                        <li>Kredite aus den USA brachten deutsche Wirtschaft in Schwung:
                             <ul>
                                 <li>kurzfristige Kredite deckten öffentliche Ausgaben</li>
-                                <li>langfristige Kredite von Unternehmern in wirtschaftlichen Wiederaufbau und von Politikern in Begleichen der Kriegsschulden und Reparationsforderungen investiert</li>
-                            </ul></li>
-                        <li>Reichsweite vereinheitlichung von Steuerwesen und Finanzverwaltung</li>
+                                <li>langfristige Kredite von Unternehmern in wirtschaftlichen Wiederaufbau und von
+                                    Politikern in Begleichen der Kriegsschulden und Reparationsforderungen investiert
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Reichsweite Vereinheitlichung von Steuerwesen und Finanzverwaltung</li>
 
                     </ul>
                 </div>
-                <div class="list-group-item list-group-item-action">
+                <div class="list-group-item txt">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">1922</h5>
                     </div>
                     <ul class="mb-1" style="text-align: left">
-                            <li>Wert der Mark: 66% des Vorkriegsniveaus</li>
+                        <li>Wert der Mark: 66% des Vorkriegsniveaus</li>
                     </ul>
                 </div>
-                <div class="list-group-item list-group-item-action">
+                <div class="list-group-item txt">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">1923</h5>
                     </div>
                     <ul class="mb-1" style="text-align: left">
-                        <li>Währungsreform 26. September 1923: Gustav Stresemann (DVP) leitete 
-                                Währungsreform ein
+                        <li>Währungsreform 26. September 1923: Gustav Stresemann (DVP) leitete
+                            Währungsreform ein
                             <ul>
-                                <li></li>
-                            </ul></li>
-                            <li>Hyperinflation</li>
-                            
-                            → 15.November Rentenmark übergangsweise eingeführt (1 Rentenmark = 1 Billion
-                                Papiermark, 4,2 Rentenmark = 1 Dollar), schnell als Zahlungs- und
-                                Wertaufbewahrungsmittel akzeptiert
-                            → 30.August 1924: Rentenmark durch Reichsmark ersetzt
-                            → Naturalien als Zahlungsmittel anstelle von Bargeld
-                            → Einzelhandel horter Waren → Hungerdemonstrationen 
-                        → 
-                            → Haushaltslage angeschärft durch Zinszahlung und Schuldentilgung, dramatisiert
-                                durch Produktions- und Steuerausfälle
-                            → Regierung versucht Schulden durch Gelddrucken zu lindern
-                            Juni 1923: Bargeld in Höhe von 500 Trillionen Mark im Umlauf und zusätzlich Notgeld
-                            von 200 Trillionen Mark 
-                        → Neue Sozialpolitik: neu eingeführte Erbschaftsteuer, mehrere einmalige Abgaben für
-                            Vermögende 
-                            → Währungs Zerrüttung: folgende Währungsreform und Währungs Zerrüttung
-                        → niedrige Lohn- und Produktionskosten → deutsche Produkte konnten zahlreich ins
-                            Ausland exportiert werden
-                        → Mitte Oktober 1923: Errichtung einer deutschen Rentenbank → Rückkehr zu einer
-                            stabilen Währung
-                        → Rentenbank begann am 15. November 1923 die Rentenmark als neues
+                                <li>15.November Rentenmark übergangsweise eingeführt (1 Rentenmark = 1 Billion
+                                    Papiermark, 4,2 Rentenmark = 1 Dollar), schnell als Zahlungs- und
+                                    Wertaufbewahrungsmittel akzeptiert</li>
+                                <li>30.August 1924: Rentenmark durch Reichsmark ersetzt</li>
+                                <li>Naturalien als Zahlungsmittel anstelle von Bargeld</li>
+                                <li>Einzelhandel horter Waren → Hungerdemonstrationen </li>
+                            </ul>
+                        </li>
+                        <li>Hyperinflation
+                            <ul>
+                                <li>Haushaltslage angeschärft durch Zinszahlung und Schuldentilgung, dramatisiert
+                                    durch Produktions- und Steuerausfälle</li>
+                                <li>Regierung versucht Schulden durch Gelddrucken zu lindern</li>
+                                <li>Juni 1923: Bargeld in Höhe von 500 Trillionen Mark im Umlauf und zusätzlich Notgeld
+                                    von 200 Trillionen Mark </li>
+                            </ul>
+                        </li>
+                        <li>Neue Sozialpolitik: neu eingeführte Erbschaftsteuer, mehrere einmalige Abgaben für
+                            Vermögende
+                            <ul>
+                                <li>Währungs Zerrüttung: folgende Währungsreform und Währungs Zerrüttung</li>
+                            </ul>
+                        </li>
+                        <li>niedrige Lohn- und Produktionskosten → deutsche Produkte konnten zahlreich ins
+                            Ausland exportiert werden</li>
+                        <li>Mitte Oktober 1923: Errichtung einer deutschen Rentenbank → Rückkehr zu einer
+                            stabilen Währung</li>
+                        <li> Rentenbank begann am 15. November 1923 die Rentenmark als neues
                             Zahlungsmittel herauszugeben (1US-Dollar = 4,20 Rentenmark), Kurs wurde im
-                            Folgenden stabil gehalten
-                        
+                            Folgenden stabil gehalten</li>
+
                     </ul>
                 </div>
-                <div class="list-group-item list-group-item-action">
+                <div class="list-group-item txt">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">List group item heading</h5>
+                        <h5 class="mb-1">1924</h5>
                     </div>
                     <ul class="mb-1" style="text-align: left">
+                        <li>Sicherheit durch Einführung der Renten- und später wertgleichen Reichsmark</li>
+                        <li>Normalisierung des Wirtschaftslebens und Beruhigung der innenpolitischen Situation führte
+                            zum Begriff “Wunder der Rentenmark”
+                            <ul>
+                                <li>Rentenmark ursprünglich als Übergangslösung zur Überwindung der Inflation, am
+                                    30.08.1924 von Reichsmark abgelöst, die deutsche Währungsstabilität garantieren
+                                    sollte</li>
+                            </ul>
+                        </li>
 
                     </ul>
                 </div>
@@ -467,95 +602,41 @@
 
             <a class="btn btn-outline-secondary" href="#">Coming soon</a>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        <div class="row">
+                <div class="col-2 picon"><img width="300"  class="img-fluid" src="pic/1_Rentenmark_1937-1-30_xx.jpg"><label>Rentenmark</label></div>
+            <div class="col-2 picon"><img  class="img-fluid"  width="300" src="pic/96001628.jpg" alt="Matthias Erzberger"><label>Matthias
+                    Erzberger</label></div>
+                    <div class="col-4 picon"><img src="pic/2-format6001.jpg" width="600" class="img-fluid"><label>Ein Ei für 320000000000 Mark</label></div>
+                    <div class="col-2 picon"><img src="pic/Gustav_Stresemann.jpg" width="300" class="img-fluid"><label>Gustav Stresemann</label></div>
+                    
+
+        </div>
+
+
     </div>
-    <!--  
 
 
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center card">
+            <div class="col-md-10 p-lg-5 mx-auto my-5">
+                   <a href="https://www.youtube.com/watch?v=1tIhegMv6Pk" id="vid1" target="_blank"><img src="pic/ia3Jrgc.png" class="img-fluid"></a>
+                   <br><label style="color: #fff;" for="vid1">Goldene Jahre</label>
+            </div>
+        </div>
 
-
-	
-
-
-
-
-
-
-1924: 	→ Sicherheit durch Einführung der Renten- und später wertgleichen Reichsmark
-→ Normalisierung des Wirtschaftslebens und Beruhigung der innenpolitischen Situation
-    führte zum Begriff “Wunder der Rentenmark”
-    → Rentenmark ursprünglich als Übergangslösung zur Überwindung der Inflation, am
-        30.08.1924 von Reichsmark abgelöst, die deutsche Währungsstabilität garantieren
-        sollte
-
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-    <div class="my-3 py-3">
-      <h2 class="display-5">Another headline</h2>
-      <p class="lead">And an even wittier subheading.</p>
-    </div>
-    <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-  </div>
-  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-    <div class="my-3 p-3">
-      <h2 class="display-5">Another headline</h2>
-      <p class="lead">And an even wittier subheading.</p>
-    </div>
-    <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-  </div>
-</div>
- -->
     <footer class="container py-5">
         <div class="row">
             <div class="col-12 col-md">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
                     viewBox="0 0 24 24" focusable="false">
-                    <title>Product</title>
+                    <title>Wirtschaftliche Erfolge der Weimarer Republik</title>
                     <circle cx="12" cy="12" r="10" />
                 </svg>
-                <small class="d-block mb-3 text-muted">&copy; 2019-2020</small>
+                <small class="d-block mb-3 text-muted">Wirtschaftliche Erfolge der Weimarer Republik</small>
             </div>
             <div class="col-6 col-md">
-                <h5>Features</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Cool stuff</a></li>
-                    <li><a class="text-muted" href="#">Random feature</a></li>
-                    <li><a class="text-muted" href="#">Team feature</a></li>
-                    <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                    <li><a class="text-muted" href="#">Another one</a></li>
-                    <li><a class="text-muted" href="#">Last time</a></li>
-                </ul>
+                <h5><a class="btn btn-outline-secondary" href="sources.html">Quellen</a></h5>
             </div>
-            <div class="col-6 col-md">
-                <h5>Resources</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Resource</a></li>
-                    <li><a class="text-muted" href="#">Resource name</a></li>
-                    <li><a class="text-muted" href="#">Another resource</a></li>
-                    <li><a class="text-muted" href="#">Final resource</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>Resources</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Business</a></li>
-                    <li><a class="text-muted" href="#">Education</a></li>
-                    <li><a class="text-muted" href="#">Government</a></li>
-                    <li><a class="text-muted" href="#">Gaming</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>About</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Team</a></li>
-                    <li><a class="text-muted" href="#">Locations</a></li>
-                    <li><a class="text-muted" href="#">Privacy</a></li>
-                    <li><a class="text-muted" href="#">Terms</a></li>
-                </ul>
-            </div>
-        </div>
     </footer>
     <script src="inc/jquery.js"></script>
     <script src="inc/bootstrap.min.js"></script>
